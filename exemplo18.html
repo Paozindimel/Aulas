@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário em tabela</title>
+</head>
+<body text="white">
+    <form>
+    <center>
+    <table border="0" bordercolor="red" bgcolor="bege">
+        <caption><font size="5"color="red">Cadastro de Clientes</font></caption>
+        <tr>
+            <td><label>Nome:</label></td>
+            <td><input type="text" name="nome" size="30"></td>
+        </tr>
+        <tr>
+            <td><label>Endereço:</label></td>
+            <td><input type="text" name="endereco" size="30"></td>
+        </tr>
+        <tr>
+            <td><label>Sexo:</label></td>
+            <td><input type="radio" name="sexo" checked>Feminino
+            <input type="radio" name="sexo">Masculino
+            <input type="radio" name="sexo">Outro</td>
+        </tr>
+        <tr>
+            <td><label>Cidade:</label></td>
+            <td><input type="text" name="cidade" size="19">
+            <label>UF:</label>
+                <select>
+                    <option value="SP">SP</option>
+                    <option value="RJ">RJ</option>
+                    <option value="MG">MG</option>
+                    
+                </select>
+        </td>
+        </tr>
+        <tr>
+            <td><label>Telefone:</label></td>
+            <td><input type="tel" name="telefone"size="30"></td>
+        </tr>
+        <tr>
+            <td><label>Email:</label></td>
+            <td><input type="email" name="email"size="30"></td>
+        </tr>
+    </table>
+    <hr>
+    <input type="reset" value="Limpar">
+    <input type="submit" value="Gravar">
+</center>
+</form>
+</body>
+</html>

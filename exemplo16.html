@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 16 - Formulários</title>
+</head>
+<body>
+    <form>
+        <h1>Formulário de exemplo</h1>
+        <label>Nome:</label><!--rótulo-->
+        <input 
+        type="text" 
+        required 
+        size="30" 
+        maxlength="30" 
+        placeholder="seu nome completo"
+        id="01"
+        name="nome"
+        value="Consumidor">
+    <!--input=entrada type=tipo da entrada required=preenchimento obrigatório-->
+    <!--size=tamanho da caixa de texto maxlength=máximo de caracteres digitados-->
+    <!--placeholder=dica, id=identificador, name=nome do controle, value=valor inicial-->
+        <label>Senha:</label>
+        <input type="password"><br>
+        <label>Sexo:</label>
+        <input type="radio"name="sexo">Feminino
+        <input type="radio"name="sexo">Masculino
+        <input type="radio"name="sexo">Outro
+        <input type="radio"name="sexo"checked>Ainda não sei<br>
+        <label>Escolha o seu curso:</label>
+        <select name="curso">
+            <option id="1">ADS</option>
+            <option>Gestão Empresarial</option>
+            <option>Mecatronica</option>
+            <option>Projetos Mecânicos</option>
+            <option>Fabricação Mecânica</option>
+        </select><br>
+        <input type="checkbox" checked disabled>Sim,desejo receber Spams
+        <hr>
+        <input type="reset" value="Limpar">
+        <input type="submit">
+</form>
+</body>
+</html>
